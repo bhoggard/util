@@ -1,2 +1,3 @@
-# art-collection-scripts
-Utility scripts for art collection imports/exports
+# util
+
+various utility scripts
