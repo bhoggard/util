@@ -13,5 +13,5 @@ end
 generator = NDJSON::Generator.new("#{ENV["HOME"]}/Downloads/nationalities.ndjson")
 
 for n in Nationality.all 
-  generator.write({_id: n["ID"], _type: "nationality", name: n["Name"]})
+  generator.write({_id: n.id, _type: "nationality", name: n["Name"]})
 end
