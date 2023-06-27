@@ -1,9 +1,5 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-# gem "rails"
-
-gem "airrecord", "~> 1.0"
-
-gem "ndjson", "~> 1.0"
+gem "airrecord"
+gem "ndjson"
+gem "standard"

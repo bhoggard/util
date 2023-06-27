@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'airrecord'
-require 'ndjson'
+require "airrecord"
+require "ndjson"
 
 Airrecord.api_key = ENV["AIRTABLE_API_KEY"]
 
@@ -12,6 +12,6 @@ end
 
 generator = NDJSON::Generator.new("#{ENV["HOME"]}/Downloads/tags.ndjson")
 
-for n in Tag.all 
+Tag.all.each do |n|
   generator.write({_id: n.id, _type: "tag", name: n["Name"]})
 end
